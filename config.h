@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
-static int borderpx = 2;
+static char *font = "Fira Code:pixelsize=12:antialias=true:autohint=true";
+static int borderpx = 4;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -91,7 +91,7 @@ char *termname = "st-256color";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 4;
 
 /* bg opacity */
 float alpha = 0.8;
@@ -99,30 +99,30 @@ float alpha = 0.8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	"#313539", /* black   */
+	"#b02626", /* red     */
+	"#40a62f", /* green   */
+	"#f2e635", /* yellow  */
+	"#314ad0", /* blue    */
+	"#b30ad0", /* magenta */
+	"#32d0fc", /* cyan    */
+	"#acadb1", /* white   */
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	"#676f78", /* black   */
+	"#b55454", /* red     */
+	"#78a670", /* green   */
+	"#faf380", /* yellow  */
+	"#707fd0", /* blue    */
+	"#c583d0", /* magenta */
+	"#8adaf1", /* cyan    */
+	"#e0e3e7", /* white   */
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
+	"#191919", /* background */
+	"#d8dee9", /* foreground */
 };
 
 
