@@ -197,6 +197,7 @@ ResourcePref resources[] = {
 		{ "background",   STRING,  &colorname[256] },
 		{ "foreground",   STRING,  &colorname[257] },
 		{ "foreground",   STRING,  &colorname[258] },
+		{ "alpha",        FLOAT,   &alpha },
 		// { "termname",     STRING,  &termname },
 		// { "shell",        STRING,  &shell },
 		// { "minlatency",   INTEGER, &minlatency },
